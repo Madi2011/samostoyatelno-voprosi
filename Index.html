@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mini-game</title>
+	<style type="text/css">
+		.bigbox{
+	height: 1200px;
+	width: 750px;
+	
+}
+        .mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+        }
+        .box1{
+        	background: black;
+        	width: 750px;
+        	height: 600px;
+        	border-radius: 15px;
+        }
+        .d-flex{
+        	display: flex;
+        }
+        .mt{
+            margin-top: 100px;
+        }
+        .btn1{
+
+        }
+        .btn2{
+
+        }
+        .btn3{
+
+        }
+        .box2{
+        background: black;
+            width: 750px;
+            height: 600px;
+            border-radius: 15px;
+            display: none;
+        }
+        .btn4{
+
+        }
+        .btn5{
+
+        }
+        .btn6{
+
+        }
+        .box3{
+        background: black;
+            width: 750px;
+            height: 600px;
+            border-radius: 15px;
+            display: none;
+        }
+         }
+        .btn7{
+
+        }
+        .btn8{
+
+        }
+        .btn9{
+
+        }
+	</style>
+</head>
+<body>
+     <div class="bigbox mx-auto">
+     	<div class="box1">
+     	<h1 style="text-align: center;color: white;">Название этого фильма?</h1>
+     	<img src="joker.jfif" style="margin-left:270px ;">
+     	<div class="d-flex mt" style="gap: 260px;">
+            <div>
+     	<button style="background-color: grey;border-radius: 100px;" class="btn1">Джокер</button>
+    </div>
+     <div>
+     	<button style="background-color: grey;border-radius: 100px;" class="btn2">Человек-паук</button>
+     </div>
+     <div>
+     	<button style="background-color: grey;border-radius: 100px;" class="btn3">Зомбилэнд</button>
+     		</div>
+     	</div>
+     </div>
+     <div class="box2">
+        <h1 style="text-align: center;color: white;">Кто автор этой песни?</h1>
+        <div style="margin-left: 230px;">
+        <audio controls>
+  <source src="BillieEilish - bad guy.mp3">
+</audio>
+</div>
+        <div class="d-flex mt" style="gap: 260px;">
+            
+     <div>
+        <button style="background-color: grey;border-radius: 100px;" class="btn6">Justin Biber</button>
+     </div>
+     <div>
+        <button style="background-color: grey;border-radius: 100px;" class="btn4">Billie Eilish</button>
+    </div>
+     <div>
+        <button style="background-color: grey;border-radius: 100px;" class="btn5">Queen</button>
+            </div>
+        </div>
+     </div>
+     <div class="box3">
+        <h1 style="text-align: center;color: white;">Из какого фильма этот трейлер?
+        </h1>
+        <div style="margin-left:100px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/h74AXqw4Opc?si=whWVB9UZGAYxyXza" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+        <div class="d-flex mt" style="gap: 260px;">
+         <div>
+        <button style="background-color: grey;border-radius: 100px;" class="btn8">Scream 4</button>
+            </div>   
+     <div>
+        <button style="background-color: grey;border-radius: 100px;" class="btn7">Scream 5</button>
+     </div>
+     
+            <div>
+        <button style="background-color: grey;border-radius: 100px;" class="btn9">Scream 6</button>
+    </div>
+        </div>
+     </div>
+ </div>
+ <script type="text/javascript">
+     document.querySelector('.btn1').onclick = function () {
+         document.querySelector('.box1').style.display = "none"
+         document.querySelector('.box2').style.display = "block"
+     }
+      document.querySelector('.btn2').onclick = function () {
+         alert("Неправильно")
+     }
+          document.querySelector('.btn3').onclick = function () {
+        alert("Неправильно")
+     }
+     document.querySelector('.btn6').onclick = function () {
+         alert("Неправильно")
+     }
+      document.querySelector('.btn4').onclick = function () {
+         document.querySelector('.box2').style.display = "none"
+         document.querySelector('.box3').style.display = "block"
+     }
+          document.querySelector('.btn5').onclick = function () {
+        alert("Неправильно")
+     }
+     document.querySelector('.btn8').onclick = function () {
+         alert("Неправильно")
+     }
+      document.querySelector('.btn9').onclick = function () {
+         alert("ВЫ ВЫИГРАЛИ!!!")
+         document.querySelector('.box3').style.display = "none"
+     }
+          document.querySelector('.btn7').onclick = function () {
+        alert("Неправильно")
+     }
+ </script>
+</body>
+</html>
